@@ -8,6 +8,7 @@ import NavBar from './components/navBar/NavBar';
 import ForgetPassword from './pages/auth/forgetPassword/ForgetPassword';
 import ResetPassword from './pages/auth/resetPassword/ResetPassword';
 import Header from './components/header/Header';
+import ConfirmOTP from './pages/auth/confirmOTP/ConfirmOTP';
 
 const App = () => {
   const routes = useRoutes([
@@ -35,6 +36,11 @@ const App = () => {
       path: '/resetPassword',
       element: <ResetPassword/>
     },
+    {
+      path: '/confirmOTP',
+      element: <ConfirmOTP/>
+    },
+
     {
       path: '/header',
       element: <Header/>
